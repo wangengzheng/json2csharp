@@ -1,8 +1,0 @@
-version: '2'
-
-services:
-  json2csharp.web:
-    image: json2csharp.web
-    build:
-      context: ./Json2CSharp.Web
-      dockerfile: Dockerfile
