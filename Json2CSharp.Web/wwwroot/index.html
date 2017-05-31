@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.0/gh-fork-ribbon.min.css" />
+
+</head>
+<a class="github-fork-ribbon" href="http://url.to-your.repo" title="Fork me on GitHub">Fork me on GitHub</a>
+<body>
+    <div class="jumbotron">
+        <h1 class="display-3">json to CSharp converter</h1>
+        <p class="lead">by marius junak, based on .netcore webapi, jquery+bootstrap. </p>
+    </div>
+
+    <div class="container">
+        <form id="inputform" action="/api/json2csharp" method="post">
+            <div class="form-group">
+                <textarea class="form-control"
+                          id="InputJson"
+                          style="min-width: 100%;min-height:400px;"
+                          placeholder='{ "number" : 123 }'></textarea>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <input type="submit" id="submitButton" class="btn btn-primary">
+                </div>
+                <div class="col-lg-4 form-check">
+                    <label class="form-check-label">
+                        <input id="InputUsePascalCase" value="" class="form-check-input" type="checkbox" >
+                        Use PascalCase
+                    </label>
+                </div>
+                <div class="col-lg-4 form-check">
+                    <label class="form-check-label">
+                        <input id="InputUseProperties" value="" class="form-check-input" type="checkbox" >
+                        Use properties
+                    </label>
+                </div>
+            </div>
+        </form>
+        <div id="error"> </div>
+        <pre>
+        <code class="csharp" id="output"></code>
+        </pre>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script src="js/site.js"></script>
+
+</body>
+</html>

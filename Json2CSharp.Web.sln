@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Json2CSharp.Web", "Json2CSharp.Web\Json2CSharp.Web.csproj", "{38166CCC-A6F5-453D-B3B1-1866E78E50C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Json2CSharp.Lib", "Json2CSharp.Lib\Json2CSharp.Lib.csproj", "{ADB2FDFF-6194-4B3D-8491-1C8768226B7F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{38166CCC-A6F5-453D-B3B1-1866E78E50C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38166CCC-A6F5-453D-B3B1-1866E78E50C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38166CCC-A6F5-453D-B3B1-1866E78E50C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38166CCC-A6F5-453D-B3B1-1866E78E50C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADB2FDFF-6194-4B3D-8491-1C8768226B7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADB2FDFF-6194-4B3D-8491-1C8768226B7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADB2FDFF-6194-4B3D-8491-1C8768226B7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADB2FDFF-6194-4B3D-8491-1C8768226B7F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
