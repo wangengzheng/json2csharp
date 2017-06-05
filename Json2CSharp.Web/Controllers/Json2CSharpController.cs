@@ -19,12 +19,12 @@ namespace Json2CSharp.Web.Controllers
             try
             {
                 var gen = new JsonClassGenerator();
-                gen.Example = vm.Example;
-                gen.MainClass = "RootObject";
-                gen.GenerateClasses();
                 gen.UsePascalCase = vm.UsePascalCase;
                 gen.UseProperties = vm.UseProperties;
+                gen.Example = vm.Example;
+                gen.MainClass = "RootObject";
 
+                gen.GenerateClasses();
                 var csharpCodeWriter = new CSharpCodeWriter();
                 var resultWriter = new StringWriter();
                 csharpCodeWriter.WriteFileStart(gen, resultWriter);
