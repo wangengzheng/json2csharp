@@ -33,22 +33,27 @@
                 </div>
                 <div class="col-lg-4 form-check">
                     <label class="form-check-label">
-                        <input id="InputUsePascalCase" value="" class="form-check-input" type="checkbox" >
+                        <input id="InputUsePascalCase" value="" class="form-check-input" type="checkbox">
                         Use PascalCase
                     </label>
                 </div>
                 <div class="col-lg-4 form-check">
                     <label class="form-check-label">
-                        <input id="InputUseProperties" value="" class="form-check-input" type="checkbox" >
+                        <input id="InputUseProperties" value="" class="form-check-input" type="checkbox">
                         Use properties
                     </label>
                 </div>
             </div>
         </form>
-        <div id="error"> </div>
-        <pre>
-        <code class="csharp" id="output"></code>
-        </pre>
+        <div id="error" style="display:none">
+            <p>An error occured converting your json. Please check if you are using valid json.</p>
+        </div>
+        <div  id="outputContainer" style="display:none">
+            <button  class="btn" id="copyToClipboardButton" onclick="copyToClipboard('#output')">Copy to clipboard</button>
+            <pre>            
+            <code class="csharp" id="output"></code>
+             </pre>
+        </div>
     </div>
 
     <script src="http://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>

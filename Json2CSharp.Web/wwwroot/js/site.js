@@ -8,8 +8,9 @@
         UseProperties: $('#InputUseProperties').is(":checked")
     });
     posting.done(function (data) {
+        $("#outputContainer").show();
         $("#output").html(data.result);
-        $("#error").html("");
+        $("#error").hide();
         $('pre code').each(function (i, block) {
             hljs.highlightBlock(block);
         });
@@ -17,6 +18,17 @@
 
     posting.fail(function (data)
     {
-        $("#error").html("<p>An error occured converting your json. Please check if you are using valid json.</p>");
+        $("#outputContainer").hide();
+        $("#error").show();
     });
 });
+
+
+// see https://stackoverflow.com/questions/22581345/click-button-copy-to-clipboard-using-jquery
+function copyToClipboard(element) {
+    var $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val($(element).text()).select();
+    document.execCommand("copy");
+    $temp.remove();
+};
