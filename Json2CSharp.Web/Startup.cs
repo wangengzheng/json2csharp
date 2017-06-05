@@ -37,7 +37,7 @@ namespace Json2CSharp.Web
         {
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
-            app.UseDefaultFiles(new DefaultFilesOptions { DefaultFileNames = new List<string> { "Index.html" } });
+            app.UseDefaultFiles(new DefaultFilesOptions { DefaultFileNames = new List<string> { "index.html" } });
             app.UseStaticFiles();
             app.UseMvc();
             
