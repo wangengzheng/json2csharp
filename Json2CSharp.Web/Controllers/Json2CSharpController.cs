@@ -22,7 +22,7 @@ namespace Json2CSharp.Web.Controllers
                 gen.UsePascalCase = vm.UsePascalCase;
                 gen.UseProperties = vm.UseProperties;
                 gen.Example = vm.Example;
-                gen.MainClass = "RootObject";
+                gen.MainClass = "JsonObject";
 
                 gen.GenerateClasses();
                 var csharpCodeWriter = new CSharpCodeWriter();
