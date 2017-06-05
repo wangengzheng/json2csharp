@@ -18,7 +18,7 @@ namespace Json2CSharp.Web
                 .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseStartup<Startup>()
                 
-                .UseUrls("http://localhost:5001/")
+                .UseUrls("http://localhost:5002/")
                 .Build();
 
             host.Run();
