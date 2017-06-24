@@ -107,3 +107,26 @@ Checking connectivity... done.
 
 
 ```
+
+
+
+## ·¢²¼ iis
+
+``` 
+ dotnet pushlish -c release
+
+ $ dotnet publish -c relase
+ Microsoft (R) Build Engine version 15.1.1012.6693
+ Copyright (C) Microsoft Corporation. All rights reserved.
+
+ Json2CSharp.Lib -> E:\1git\json2csharp\Json2CSharp.Lib\bin\relase\netstandard1.4\Json2CSharp.Lib.dll
+ Controllers\Json2CSharpController.cs(42,30): warning CS0168: The variable 'e' is declared but never used [E:\1git\json2csharp\Json2CSharp.Web\Json2CSharp.Web.csproj]
+					      Controllers\Json2CSharpController.cs(17,42): warning CS1998: This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread. [E:\1git\json2csharp\Json2CSharp.Web\Json2CSharp.Web.csproj]
+											   Json2CSharp.Web -> E:\1git\json2csharp\Json2CSharp.Web\bin\relase\netcoreapp1.1\Json2CSharp.Web.dll
+
+iis local path --> E:\1git\json2csharp\Json2CSharp.Web\bin\relase\netcoreapp1.1
+
+to website -> http://localhost:prot
+ 
+```
+
