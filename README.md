@@ -13,18 +13,18 @@ following
 ### environment  windows10 git
 
 ```
-	cd e:\1git
+cd e:\1git
 
-	git clone https://github.com/wangengzheng/json2csharp
-	//output #git clone
+git clone https://github.com/wangengzheng/json2csharp
+//output #git clone
 
-	cd json2csharp
+cd json2csharp
 
-	dotnet restore     
-	//output #restore
+dotnet restore     
+//output #restore
 
-	dotnet run
-	//output #run
+dotnet run
+//output #run
 ```
 
 
