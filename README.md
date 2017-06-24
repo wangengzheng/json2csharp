@@ -8,10 +8,14 @@ following
 ## usage 
 following
 
-## init on my compute
-## Ô´Ó http://json2csharp.com/ [json2csharp](http://json2csharp.com/) ¿ÔÚgithubÑ°ÕÒÒ»¸öÔÚÎÒ±¾µØµÃÏîÄ¿ fork ÏÂÀ´
-### environment  windows10 git
+## idea
+```
+http://json2csharp.com/ [json2csharp](http://json2csharp.com/) ¿
 
+all thoughts are seen after this site. When I found this exactly the same in github I forked down
+```
+
+## command
 ```
 cd e:\1git
 
